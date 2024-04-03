@@ -1,2 +1,4 @@
 # Magma-NFT-Gallery
-SImple tool to view an addresses ERC-721 nfts
+Simple tool to view an address' ERC-721 nfts
+
+https://pondscan.github.io/Magma-NFT-Gallery/index.html 
