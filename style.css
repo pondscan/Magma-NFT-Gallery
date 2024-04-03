@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 8px;
+}
+
+.card {
+    width: 180px; /* Adjust width as needed */
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    display: block; /* Makes the img element a block element */
+    margin: 0 auto; /* Automatically calculates left and right margins to center the img */
+}
+
+
+.card-content {
+    padding: 10px;
+}
+
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-bar button {
+        width: auto;
+    }
+}
